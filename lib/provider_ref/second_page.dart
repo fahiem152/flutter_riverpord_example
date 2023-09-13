@@ -2,11 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_riverpod_example/provider_ref/provider.dart';
 
-class SecondPage extends ConsumerWidget {
+class SecondPage extends ConsumerStatefulWidget {
   const SecondPage({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<SecondPage> createState() => _SecondPageState();
+}
+
+class _SecondPageState extends ConsumerState<SecondPage> {
+  @override
+  Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
         child: Column(
