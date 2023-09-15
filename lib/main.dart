@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_riverpod_example/async_notifier_provider/main_async_notifier_provider.dart';
 import 'package:flutter_riverpod_example/future_stream_provider/main_future_stream_provider_page.dart';
 import 'package:flutter_riverpod_example/modifersfamily_autodispose/main_modifersfamiliy_autodispose.dart';
 import 'package:flutter_riverpod_example/provider_ref/main_provider_ref_page.dart';
@@ -13,5 +14,6 @@ void main() {
   // runApp(const ProviderScope(child: MainStateNotifierProvider()));
   // runApp(const ProviderScope(child: MainFutureStreamProviderPage()));
   // runApp(const ProviderScope(child: MainModifersFamilyAutoDispoes()));
-  runApp(const ProviderScope(child: MainRiverpordGenerator()));
+  // runApp(const ProviderScope(child: MainRiverpordGenerator()));
+  runApp(const ProviderScope(child: MainAsyncNotifierProvider()));
 }
